@@ -1,0 +1,9 @@
+body {
+  font-family: $regular;
+}
+
+.title {
+  font-family: $heavy;
+  @include font(18px, 21.09px, 800);
+  text-transform: uppercase;
+}

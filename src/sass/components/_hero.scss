@@ -1,0 +1,75 @@
+.hero {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__block {
+    display: flex;
+    margin-bottom: 17px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::after {
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      content: '';
+      width: 40px;
+      height: 4px;
+      background-color: $accent-color;
+    }
+  }
+
+  &__text {
+    font-family: $light;
+    @include font(11px, 17px, 300);
+  }
+
+  &__left-box {
+    outline: 1px solid green;
+  }
+
+  &__right-box {
+    margin-left: 16px;
+    position: relative;
+    min-width: 144px;
+    height: 144px;
+    background-color: $section-bg-color;
+
+    outline: 1px solid blue;
+  }
+
+  &__img {
+    position: absolute;
+    top: -26px;
+    left: -36px;
+  }
+
+  &__tab-btn {
+    display: flex;
+    justify-content: center;
+    outline: 1px solid orangered;
+  }
+
+  &__radio {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 8px;
+    height: 8px;
+    background-color: $primary-color-opacity;
+    border-radius: 50%;
+    border-color: transparent;
+    cursor: pointer;
+
+    color: $accent-color;
+
+    // outline: 1px solid red;
+
+    & ~ & {
+      margin-left: 36px;
+    }
+  }
+}

@@ -1,0 +1,88 @@
+.about {
+  position: relative;
+  background-color: $section-bg-color;
+
+  &__title {
+    position: absolute;
+    top: -10px;
+    left: 32px;
+    font-family: $heavy;
+    @include font(28px, 32.81px, 800);
+    color: $wight;
+    text-transform: uppercase;
+    text-align: center;
+
+    &::after {
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      content: '';
+      width: 40px;
+      height: 4px;
+      background-color: $accent-color;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    margin-bottom: 36px;
+    margin-right: 32px;
+    margin-left: 32px;
+
+    font-family: $light;
+    @include font(11px, 17px, 300);
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-bottom: -12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 12px;
+    margin-bottom: 12px;
+    flex-basis: calc(100% / 2 - 12px);
+    width: 144px;
+    height: 144px;
+    border: 4px solid $wight;
+  }
+
+  &__number {
+    font-family: $heavy;
+    @include font(40px, 46.88px, 800);
+    color: $accent-color;
+  }
+
+  &__text-grid {
+    text-align: center;
+    font-family: $light;
+    @include font(13px, 18px, 300);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    margin-top: 18px;
+    font-family: $light;
+    @include font(13px, 15.23px, 300);
+    color: rgba(34, 34, 34, 0.4);
+  }
+
+  &__arrow {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, 50%);
+  }
+}

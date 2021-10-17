@@ -1,0 +1,86 @@
+.what-we-do {
+  &__title {
+    position: relative;
+    font-family: $heavy;
+    @include font(24px, 28.13px, 800);
+    margin-bottom: 46px;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      bottom: -14px;
+      left: 0;
+      content: '';
+      width: 40px;
+      height: 4px;
+      background-color: $accent-color;
+    }
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 18px;
+  }
+
+  &__left-box {
+    margin-right: 15px;
+    flex-basis: calc(100% / 2);
+  }
+
+  &__right-box {
+    position: relative;
+    width: 144px;
+    height: 144px;
+    background-color: $section-bg-color;
+  }
+
+  &__tema {
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-family: $light;
+    @include font(11px, 17px, 300);
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 160px;
+    height: 160px;
+  }
+
+  &__link {
+    display: block;
+    margin-bottom: 36px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-top: 1px solid $primary-color-opacity;
+    border-bottom: 1px solid $primary-color-opacity;
+
+    // outline: 1px solid green;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: $heavy;
+    @include font(20px, 23.44px, 800);
+  }
+
+  &__price-under {
+    font-family: $light;
+    @include font(11px, 12.89px, 300);
+  }
+
+  &__btn {
+    padding: 12px, 63px;
+    color: $accent-color;
+    border-radius: 100px;
+    background-color: transparent;
+  }
+}

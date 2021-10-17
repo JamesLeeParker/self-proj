@@ -1,0 +1,47 @@
+.header-mob {
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__icon {
+    width: 30px;
+    height: 20px;
+    background-color: transparent;
+  }
+
+  &__logo-wrapper {
+    border-top: 4px solid $primary-text-color;
+    border-bottom: 4px solid $primary-text-color;
+  }
+
+  &__logo {
+    position: relative;
+    display: inline-block;
+    @include font(24px, 28.13px, 800);
+    font-family: $bold;
+    cursor: pointer;
+  }
+
+  &__item {
+    height: auto;
+    text-align: center;
+  }
+
+  &__tel {
+    font-family: $heavy;
+    @include font(13px, 15.23px, 800);
+  }
+
+  &__mail-text {
+    font-family: $light;
+    @include font(11px, 12.89px, 300);
+  }
+}
+
+.header-mob__btn {
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+}
